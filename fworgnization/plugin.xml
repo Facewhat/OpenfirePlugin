@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+    <!-- Main plugin class -->
+    <class>com.fw.plugin.FWPlugin</class>
+    <name>企业通讯录管理</name>
+    <description>实现企业通讯录.</description>
+    <author>lxy,lxl</author>
+    <version>1.0.0</version>
+    <date>04/6/2018</date>
+    <minServerVersion>3.4.0</minServerVersion>
+  
+    <adminconsole>   
+	 	<tab id="orgTable" name="企业通讯录" url="org_view.jsp">
+            <sidebar id="orgSidebar" name="设置" url="org_view.jsp">
+
+                 <item id="fw-org-view" name="org_View" url="org_view.jsp"
+                	 description="Click to orgView." 
+                />
+                <item id="fw-manage_user" name="manage_user" url="manage_user.jsp"
+                	 description="Click to manage_user" 
+                />
+            </sidebar>
+        </tab>
+    </adminconsole>
+    
+      <!--配置数据库文件的名称，如  fwarchive 则在database中就是  fwarchive_mysq.sql
+    fwarchive_oracle.sql 等
+    <databaseKey>fwarchive</databaseKey>
+    <databaseVersion>2</databaseVersion>
+    <licenseType>gpl</licenseType>
+    <item id="error-service" name="error" url="error.jsp"
+                description="Click is trigger blog plugin "/>
+    -->
+</plugin>
+ 
